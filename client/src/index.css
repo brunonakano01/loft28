@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* Exact fonts from madremezcal.com */
+@font-face {
+  font-family: 'Highway Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/HighwayGothic_2b0f444b.TTF') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Highway Gothic Expanded';
+  font-style: normal;
+  font-weight: 200;
+  src: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/HighwayGothicExpanded_75a9da68.TTF') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nouveau Hippie JNL';
+  font-style: normal;
+  font-weight: 200;
+  src: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/NouveauHippie_22c900a3.otf') format('opentype');
+  font-display: swap;
+}
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  LOFT 28 — Design: Inspirado em madremezcal.com/pages/about
+  Fundo: #CAC891 (khaki quente / olive tan)
+  Texto: #2a2618 (marrom escuro quase preto)
+  Labels/Nav: Barlow Condensed, uppercase, espaçado (= Highway Gothic)
+  Títulos: EB Garamond italic (elegância editorial)
+  Filosofia: editorial, muito espaço, texto estreito + foto grande, sem bordas
+*/
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0;
+  --bg: #CAC891;
+  --bg-alt: #bfbd87;
+  --text: #2a2618;
+  --text-muted: rgba(42, 38, 24, 0.5);
+  --text-label: rgba(42, 38, 24, 0.45);
+
+  --background: oklch(0.82 0.05 98);
+  --foreground: oklch(0.18 0.02 80);
+  --card: oklch(0.80 0.05 98);
+  --card-foreground: oklch(0.18 0.02 80);
+  --primary: oklch(0.18 0.02 80);
+  --primary-foreground: oklch(0.82 0.05 98);
+  --border: oklch(0.18 0.02 80 / 15%);
+  --input: oklch(0.18 0.02 80 / 15%);
+  --ring: oklch(0.18 0.02 80 / 30%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  button:not(:disabled), a[href] {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1300px;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 769px) {
+    .container {
+      padding-left: 12rem;
+      padding-right: 4rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      padding-left: 14rem;
+      padding-right: 6rem;
+    }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
