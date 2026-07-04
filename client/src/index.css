@@ -24,7 +24,6 @@
   src: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/NouveauHippie_22c900a3.otf') format('opentype');
   font-display: swap;
 }
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
