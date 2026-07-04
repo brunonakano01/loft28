@@ -1,0 +1,21 @@
+{
+  "hosting_mode": "reserved",
+  "project_name": "loft28",
+  "app_id": "fYkaLMssTH4Tfcy8DVGZCv",
+  "description": "Loft 28 - Luxury Real Estate Showcase",
+  "framework": "vite-react",
+  "build_command": "npm run build",
+  "start_command": "npm run preview",
+  "environment": "production",
+  "port": 3000,
+  "memory": "512MB",
+  "cpu": "1",
+  "timeout": "none",
+  "cold_start": false,
+  "persistent": true,
+  "always_on": true,
+  "auto_restart": true,
+  "ssl_enabled": true,
+  "subdomain": "loft28",
+  "domain": "manus.space"
+}
