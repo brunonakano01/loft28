@@ -3,14 +3,13 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
  source /home/ubuntu/.user_env
-h(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Serve static files from the built client
-const publicPath = path.join(__dirname, '../dist/public');
+ source /home/ubuntu/.user_env
+ source /home/ubuntu/.user_env
+ source /home/ubuntu/.user_env
+ source /home/ubuntu/.user_env
+ source /home/ubuntu/.user_env
+ source /home/ubuntu/.user_env
+th = path.join(__dirname, '../dist/public');
 app.use(express.static(publicPath));
 
 // SPA fallback - serve index.html for all routes

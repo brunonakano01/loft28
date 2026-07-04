@@ -1,0 +1,11 @@
+{
+  "subdomain": "loft28",
+  "domain": "manus.im",
+  "fullUrl": "https://loft28.manus.im",
+  "projectName": "loft28",
+  "appId": "fYkaLMssTH4Tfcy8DVGZCv",
+  "type": "web-static",
+  "port": 3000,
+  "status": "configured",
+  "createdAt": "2026-06-27T01:30:00Z"
+}
