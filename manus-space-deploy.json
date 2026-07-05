@@ -1,0 +1,15 @@
+{
+  "project_name": "loft28",
+  "subdomain": "loft28",
+  "domain": "manus.space",
+  "app_id": "fYkaLMssTH4Tfcy8DVGZCv",
+  "deployment_type": "webdev",
+  "framework": "vite-react",
+  "build_command": "npm run build",
+  "start_command": "npm run preview",
+  "port": 3000,
+  "environment": "production",
+  "auto_deploy": true,
+  "ssl_enabled": true,
+  "cache_enabled": true
+}

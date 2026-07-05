@@ -1,0 +1,8 @@
+{
+  "subdomain": "loft28",
+  "domain": "manus.space",
+  "target_url": "https://3000-itap81dwp52y21nblubtu-ad67a086.us2.manus.computer",
+  "type": "permanent_redirect",
+  "ssl": true,
+  "cache": true
+}

@@ -747,7 +747,7 @@ export default function Home() {
 
           /* Section media: single column, full-width images */
           .section-media-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
-          .section-media-grid > div { width: 100% !important; margin-left: 0 !important; padding-top: 0 !important; }
+          .section-media-grid > div { width: 100% !important; margin-left: 0 !important; padding-top: 0 !important; margin-bottom: 1.5rem !important; }
           .section-media-grid img, .section-media-grid video { width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: auto !important; }
 
           /* matchHeight layout: single column on mobile */
@@ -839,7 +839,7 @@ export default function Home() {
               transition: "filter 0.6s ease",
             }} />
         </button>
-        {/* Top-right label — always visible */}
+        {/* Top-right label — desktop only */}
         <div style={{
           position: "absolute", right: "1.2rem", top: "1.2rem",
           fontFamily: "'Highway Gothic', 'Barlow Condensed', sans-serif",
@@ -848,6 +848,7 @@ export default function Home() {
           lineHeight: 1.7, textAlign: "right",
           transition: "color 0.6s ease",
           pointerEvents: "none",
+          display: "none",
         }}>
           <div>KM 24</div>
           <div>Raposo Tavares</div>
