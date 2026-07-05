@@ -746,9 +746,9 @@ export default function Home() {
           .intro-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
 
           /* Section media: single column, full-width images */
-          .section-media-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
-          .section-media-grid > div { width: 100% !important; margin-left: 0 !important; padding-top: 0 !important; margin-bottom: 1.5rem !important; }
-          .section-media-grid img, .section-media-grid video { width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: auto !important; }
+          .section-media-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .section-media-grid > div { width: 100% !important; margin-left: 0 !important; padding-top: 0 !important; margin-bottom: 2.5rem !important; }
+          .section-media-grid img, .section-media-grid video { width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: auto !important; display: block !important; margin-bottom: 2.5rem !important; }
 
           /* matchHeight layout: single column on mobile */
           .match-height-grid { grid-template-columns: 1fr !important; height: auto !important; }
