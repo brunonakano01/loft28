@@ -1344,6 +1344,8 @@ function InfoSection() {
                 { name: "Shopping Granja Vianna", desc: "Moda, lazer e gastronomia", img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/l6AGW2Rnnvhu_a19d8b28.jpg" },
                 { name: "Pizzaria Basílica", desc: "Pizza artesanal em forno a lenha", img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/basilica_restaurant_ab8e8c12.jpg" },
                 { name: "Colégio Rio Branco", desc: "Educação de excelência na Granja Vianna", img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/colegio_rio_branco_2938c070.jpg" },
+                { name: "Shopping Square", desc: "Compras e entretenimento", img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/l6AGW2Rnnvhu_a19d8b28.jpg" },
+                { name: "Padaria Deola", desc: "Pão artesanal e confeitaria", img: "https://d2xsxph8kpxj0f.cloudfront.net/310519663345609769/fYkaLMssTH4Tfcy8DVGZCv/basilica_restaurant_ab8e8c12.jpg" },
               ].map((place, i) => (
                 <div key={i} style={{ overflow: "hidden" }}>
                   <div style={{ height: "200px", overflow: "hidden", marginBottom: "0.8rem" }}>
