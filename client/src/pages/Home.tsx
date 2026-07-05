@@ -263,8 +263,16 @@ function MosaicVideo({ src, vertical }: { src: string; vertical?: boolean }) {
     : { width: "100%", height: "auto", display: "block" };
 
   return (
-    <div style={{ overflow: "hidden" }}>
-      <video src={src} autoPlay muted loop playsInline style={videoStyle} />
+    <div style={{ overflow: "hidden", backgroundColor: "#000" }}>
+      <video
+        src={src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        style={videoStyle}
+      />
     </div>
   );
 }
@@ -407,8 +415,8 @@ function Section({ section }: { section: typeof SECTIONS[0] }) {
                   {leftItems.map((item, k) => {
                     if (item.type === "video") {
                       return (
-                        <video key={k} src={item.src} autoPlay muted loop playsInline
-                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                        <video key={k} src={item.src} autoPlay muted loop playsInline preload="metadata"
+                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", backgroundColor: "#000" }} />
                       );
                     }
                     const pIdx = photoSrcs.indexOf(item.src);
@@ -423,8 +431,8 @@ function Section({ section }: { section: typeof SECTIONS[0] }) {
                   {rightItems.map((item, k) => {
                     if (item.type === "video") {
                       return (
-                        <video key={k} src={item.src} autoPlay muted loop playsInline
-                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                        <video key={k} src={item.src} autoPlay muted loop playsInline preload="metadata"
+                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", backgroundColor: "#000" }} />
                       );
                     }
                     const pIdx = photoSrcs.indexOf(item.src);
@@ -1255,10 +1263,14 @@ function GallerySection({ bgColor }: { bgColor: string }) {
           {GALLERY_ITEMS.map((item, i) => {
             if (item.type === "video") {
               return (
-                <div key={i} style={{ overflow: "hidden", aspectRatio: "1 / 1" }}>
+                <div key={i} style={{ overflow: "hidden", aspectRatio: "1 / 1", backgroundColor: "#000" }}>
                   <video
                     src={item.src}
-                    autoPlay muted loop playsInline
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
                     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
                 </div>
